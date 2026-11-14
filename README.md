@@ -4,6 +4,8 @@
 
 **当前交付为可执行的首版工程。已完成的验证范围见 [验收报告](reports/ACCEPTANCE.md)。本机没有 NVIDIA GPU，尚未完成魔搭 A10 真人素材及最终成片验收，不能标记 GPU E2E PASSED。**
 
+在魔搭实际验证时，请按 [A10 GPU 完整验证流程](docs/GPU_VALIDATION.md) 执行：安装与 CUDA 检查 → 定妆审核 → 分镜审核 → 小尺寸/正式视频 → 授权配音 → 合成预览 → GPU 验收与证据归档。实测结果填写 [验证记录模板](reports/templates/A10_VALIDATION_RECORD.md)。
+
 ## 快速开始
 
 在 Linux GPU Notebook 项目根目录执行。需要 Python 3.11–3.12、Git、FFmpeg（含 libass）、ffprobe；建议 A10 24GB、32GB RAM、至少 80–100 GiB 空闲磁盘。依赖编译可能需要系统已安装 gcc/g++、Python 头文件、libGL、libgomp；脚本不修改系统驱动或系统 Python。
@@ -59,9 +61,9 @@ python engine.py review --asset ASSET_实际ID --decision approved --reviewer "�
 
 ```bash
 python generate_episode.py --stage videos --shot EP001_SH002 --low-resolution --frames 33
-# 低分辨率结果只用于验证；正式输出请生成新候选并选择正式版本：
-python generate_episode.py --stage videos --shot EP001_SH002 --regenerate
-python generate_episode.py --stage videos
+# 低分辨率结果只用于验证；不同参数会创建正式任务，无需 --regenerate：
+python generate_episode.py --stage videos --shot EP001_SH002 --frames 49
+python generate_episode.py --stage videos --frames 49
 python engine.py review-list --episode EP001
 python engine.py review --asset ASSET_实际视频ID --decision approved --reviewer "你的名字"
 ```

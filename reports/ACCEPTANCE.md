@@ -42,6 +42,8 @@
 
 ## A10 验收入口
 
+详细操作、每一步通过条件、低分辨率试跑、恢复及日志归档见 [魔搭 A10 GPU 验证流程](../docs/GPU_VALIDATION.md)，本轮实测结果使用 [验证记录模板](templates/A10_VALIDATION_RECORD.md) 记录。本文件现有的离线结果不会因此变成 GPU 通过结果。
+
 按 README 在 GPU Notebook 安装，依次完成角色、图片、视频、配音及成片的人工审核后执行：
 
 ```bash
