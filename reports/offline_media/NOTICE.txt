@@ -1,0 +1,1 @@
+Synthetic patterns and tones for FFmpeg testing only. NOT an AI-generated drama. NOT GPU E2E. 216x384, 45 seconds.

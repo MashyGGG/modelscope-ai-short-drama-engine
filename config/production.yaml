@@ -1,0 +1,28 @@
+comfy_url: http://127.0.0.1:8188
+tts_url: http://127.0.0.1:9880
+poll_interval: 2
+task_timeout: 3600
+image:
+  width: 704
+  height: 1280
+  steps: 30
+  cfg: 5.5
+video:
+  width: 704
+  height: 1280
+  frames: 49
+  fps: 16
+  steps: 20
+  cfg: 5
+  low_resolution: [384, 640]
+render:
+  width: 1080
+  height: 1920
+  fps: 24
+  crf: 18
+  max_hold_seconds: 1.0
+  font: Noto Sans CJK SC
+  font_size: 54
+  margin_v: 160
+  music_volume: 0.12
+  effects_volume: 0.4

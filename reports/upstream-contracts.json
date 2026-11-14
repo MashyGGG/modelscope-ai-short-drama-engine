@@ -1,0 +1,1739 @@
+{
+  "checked": [
+    "workflows\\api\\realistic_txt2img.json",
+    "workflows\\api\\sdxl_faceid.json",
+    "workflows\\api\\wan22_i2v.json"
+  ],
+  "contracts": {
+    "CLIPTextEncode": {
+      "required": [
+        "text",
+        "clip"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ConditioningCombine": {
+      "required": [
+        "conditioning_1",
+        "conditioning_2"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ConditioningAverage": {
+      "required": [
+        "conditioning_to",
+        "conditioning_from",
+        "conditioning_to_strength"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ConditioningConcat": {
+      "required": [
+        "conditioning_to",
+        "conditioning_from"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ConditioningMultiply": {
+      "required": [
+        "conditioning",
+        "multiplier"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ConditioningSetArea": {
+      "required": [
+        "conditioning",
+        "width",
+        "height",
+        "x",
+        "y",
+        "strength"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ConditioningSetAreaPercentage": {
+      "required": [
+        "conditioning",
+        "width",
+        "height",
+        "x",
+        "y",
+        "strength"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ConditioningSetAreaStrength": {
+      "required": [
+        "conditioning",
+        "strength"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ConditioningSetMask": {
+      "required": [
+        "conditioning",
+        "mask",
+        "strength",
+        "set_cond_area"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ConditioningZeroOut": {
+      "required": [
+        "conditioning"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ConditioningSetTimestepRange": {
+      "required": [
+        "conditioning",
+        "start",
+        "end"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "VAEDecode": {
+      "required": [
+        "samples",
+        "vae"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "VAEDecodeTiled": {
+      "required": [
+        "samples",
+        "vae",
+        "tile_size",
+        "overlap",
+        "temporal_size",
+        "temporal_overlap"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "VAEEncode": {
+      "required": [
+        "pixels",
+        "vae"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "VAEEncodeTiled": {
+      "required": [
+        "pixels",
+        "vae",
+        "tile_size",
+        "overlap",
+        "temporal_size",
+        "temporal_overlap"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "VAEEncodeForInpaint": {
+      "required": [
+        "pixels",
+        "vae",
+        "mask",
+        "grow_mask_by"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "InpaintModelConditioning": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "pixels",
+        "mask",
+        "noise_mask"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "SaveLatent": {
+      "required": [
+        "samples",
+        "filename_prefix"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LoadLatent": {
+      "required": [
+        "latent"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "CheckpointLoader": {
+      "required": [
+        "config_name",
+        "ckpt_name"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "CheckpointLoaderSimple": {
+      "required": [
+        "ckpt_name"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "DiffusersLoader": {
+      "required": [
+        "model_path"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "unCLIPCheckpointLoader": {
+      "required": [
+        "ckpt_name"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "CLIPSetLastLayer": {
+      "required": [
+        "clip",
+        "stop_at_clip_layer"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LoraLoader": {
+      "required": [
+        "model",
+        "clip",
+        "lora_name",
+        "strength_model",
+        "strength_clip"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LoraLoaderModelOnly": {
+      "required": [
+        "model",
+        "lora_name",
+        "strength_model"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "VAELoader": {
+      "required": [
+        "vae_name"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ControlNetLoader": {
+      "required": [
+        "control_net_name"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "DiffControlNetLoader": {
+      "required": [
+        "model",
+        "control_net_name"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ControlNetApply": {
+      "required": [
+        "conditioning",
+        "control_net",
+        "image",
+        "strength"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ControlNetApplyAdvanced": {
+      "required": [
+        "positive",
+        "negative",
+        "control_net",
+        "image",
+        "strength",
+        "start_percent",
+        "end_percent"
+      ],
+      "optional": [
+        "vae"
+      ],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "UNETLoader": {
+      "required": [
+        "unet_name",
+        "weight_dtype"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "CLIPLoader": {
+      "required": [
+        "clip_name",
+        "type"
+      ],
+      "optional": [
+        "device"
+      ],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "DualCLIPLoader": {
+      "required": [
+        "clip_name1",
+        "clip_name2",
+        "type"
+      ],
+      "optional": [
+        "device"
+      ],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "CLIPVisionLoader": {
+      "required": [
+        "clip_name"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "CLIPVisionEncode": {
+      "required": [
+        "clip_vision",
+        "image",
+        "crop"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "StyleModelLoader": {
+      "required": [
+        "style_model_name"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "StyleModelApply": {
+      "required": [
+        "conditioning",
+        "style_model",
+        "clip_vision_output",
+        "strength",
+        "strength_type"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "unCLIPConditioning": {
+      "required": [
+        "conditioning",
+        "clip_vision_output",
+        "strength",
+        "noise_augmentation"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "GLIGENLoader": {
+      "required": [
+        "gligen_name"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "GLIGENTextBoxApply": {
+      "required": [
+        "conditioning_to",
+        "clip",
+        "gligen_textbox_model",
+        "text",
+        "width",
+        "height",
+        "x",
+        "y"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "EmptyLatentImage": {
+      "required": [
+        "width",
+        "height",
+        "batch_size"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LatentFromBatch": {
+      "required": [
+        "samples",
+        "batch_index",
+        "length"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "RepeatLatentBatch": {
+      "required": [
+        "samples",
+        "amount"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LatentUpscale": {
+      "required": [
+        "samples",
+        "upscale_method",
+        "width",
+        "height",
+        "crop"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LatentUpscaleBy": {
+      "required": [
+        "samples",
+        "upscale_method",
+        "scale_by"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LatentRotate": {
+      "required": [
+        "samples",
+        "rotation"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LatentFlip": {
+      "required": [
+        "samples",
+        "flip_method"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LatentComposite": {
+      "required": [
+        "samples_to",
+        "samples_from",
+        "x",
+        "y",
+        "feather"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LatentBlend": {
+      "required": [
+        "samples1",
+        "samples2",
+        "blend_factor"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LatentCrop": {
+      "required": [
+        "samples",
+        "width",
+        "height",
+        "x",
+        "y"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "SetLatentNoiseMask": {
+      "required": [
+        "samples",
+        "mask"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "KSampler": {
+      "required": [
+        "model",
+        "seed",
+        "steps",
+        "cfg",
+        "sampler_name",
+        "scheduler",
+        "positive",
+        "negative",
+        "latent_image",
+        "denoise"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "KSamplerAdvanced": {
+      "required": [
+        "model",
+        "add_noise",
+        "noise_seed",
+        "steps",
+        "cfg",
+        "sampler_name",
+        "scheduler",
+        "positive",
+        "negative",
+        "latent_image",
+        "start_at_step",
+        "end_at_step",
+        "return_with_leftover_noise"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "SaveImage": {
+      "required": [
+        "images",
+        "filename_prefix"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "PreviewImage": {
+      "required": [
+        "images"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LoadImage": {
+      "required": [
+        "image"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LoadImageMask": {
+      "required": [
+        "channel"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "LoadImageOutput": {
+      "required": [
+        "image"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ImageScale": {
+      "required": [
+        "image",
+        "upscale_method",
+        "width",
+        "height",
+        "crop"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ImageScaleBy": {
+      "required": [
+        "image",
+        "upscale_method",
+        "scale_by"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ImageInvert": {
+      "required": [
+        "image"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ImageBatch": {
+      "required": [
+        "image1",
+        "image2"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "EmptyImage": {
+      "required": [
+        "width",
+        "height",
+        "batch_size",
+        "color"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "ImagePadForOutpaint": {
+      "required": [
+        "image",
+        "left",
+        "top",
+        "right",
+        "bottom",
+        "feathering"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/nodes.py"
+    },
+    "IPAdapterUnifiedLoader": {
+      "required": [
+        "model",
+        "preset"
+      ],
+      "optional": [
+        "ipadapter"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterUnifiedLoaderFaceID": {
+      "required": [
+        "model",
+        "preset",
+        "lora_strength",
+        "provider"
+      ],
+      "optional": [
+        "ipadapter"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterUnifiedLoaderCommunity": {
+      "required": [
+        "model",
+        "preset"
+      ],
+      "optional": [
+        "ipadapter"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterModelLoader": {
+      "required": [
+        "ipadapter_file"
+      ],
+      "optional": [],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterInsightFaceLoader": {
+      "required": [
+        "provider",
+        "model_name"
+      ],
+      "optional": [],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterSimple": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "start_at",
+        "end_at",
+        "weight_type"
+      ],
+      "optional": [
+        "attn_mask"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterAdvanced": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "weight_type",
+        "combine_embeds",
+        "start_at",
+        "end_at",
+        "embeds_scaling"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterBatch": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "weight_type",
+        "start_at",
+        "end_at",
+        "embeds_scaling",
+        "encode_batch_size"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterStyleComposition": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image_style",
+        "image_composition",
+        "weight_style",
+        "weight_composition",
+        "expand_style",
+        "combine_embeds",
+        "start_at",
+        "end_at",
+        "embeds_scaling"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterStyleCompositionBatch": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image_style",
+        "image_composition",
+        "weight_style",
+        "weight_composition",
+        "expand_style",
+        "start_at",
+        "end_at",
+        "embeds_scaling"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterFaceID": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "weight_faceidv2",
+        "weight_type",
+        "combine_embeds",
+        "start_at",
+        "end_at",
+        "embeds_scaling"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision",
+        "insightface"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterFaceIDKolors": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "weight_faceidv2",
+        "weight_kolors",
+        "weight_type",
+        "combine_embeds",
+        "start_at",
+        "end_at",
+        "embeds_scaling"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision",
+        "insightface"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterTiled": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "weight_type",
+        "combine_embeds",
+        "start_at",
+        "end_at",
+        "sharpening",
+        "embeds_scaling"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterTiledBatch": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "weight_type",
+        "start_at",
+        "end_at",
+        "sharpening",
+        "embeds_scaling",
+        "encode_batch_size"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterEmbeds": {
+      "required": [
+        "model",
+        "ipadapter",
+        "pos_embed",
+        "weight",
+        "weight_type",
+        "start_at",
+        "end_at",
+        "embeds_scaling"
+      ],
+      "optional": [
+        "neg_embed",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterMS": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "weight_faceidv2",
+        "weight_type",
+        "combine_embeds",
+        "start_at",
+        "end_at",
+        "embeds_scaling",
+        "layer_weights"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision",
+        "insightface"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterClipVisionEnhancer": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "weight_type",
+        "combine_embeds",
+        "start_at",
+        "end_at",
+        "embeds_scaling",
+        "enhance_tiles",
+        "enhance_ratio"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterClipVisionEnhancerBatch": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "weight_type",
+        "start_at",
+        "end_at",
+        "embeds_scaling",
+        "enhance_tiles",
+        "enhance_ratio",
+        "encode_batch_size"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterFromParams": {
+      "required": [
+        "model",
+        "ipadapter",
+        "ipadapter_params",
+        "combine_embeds",
+        "embeds_scaling"
+      ],
+      "optional": [
+        "image_negative",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterPreciseStyleTransfer": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "style_boost",
+        "combine_embeds",
+        "start_at",
+        "end_at",
+        "embeds_scaling"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterPreciseComposition": {
+      "required": [
+        "model",
+        "ipadapter",
+        "image",
+        "weight",
+        "composition_boost",
+        "combine_embeds",
+        "start_at",
+        "end_at",
+        "embeds_scaling"
+      ],
+      "optional": [
+        "image_negative",
+        "attn_mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterEncoder": {
+      "required": [
+        "ipadapter",
+        "image",
+        "weight"
+      ],
+      "optional": [
+        "mask",
+        "clip_vision"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterCombineEmbeds": {
+      "required": [
+        "embed1",
+        "method"
+      ],
+      "optional": [
+        "embed2",
+        "embed3",
+        "embed4",
+        "embed5"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterNoise": {
+      "required": [
+        "type",
+        "strength",
+        "blur"
+      ],
+      "optional": [
+        "image_optional"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "PrepImageForClipVision": {
+      "required": [
+        "image",
+        "interpolation",
+        "crop_position",
+        "sharpening"
+      ],
+      "optional": [],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterSaveEmbeds": {
+      "required": [
+        "embeds",
+        "filename_prefix"
+      ],
+      "optional": [],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterLoadEmbeds": {
+      "required": [
+        "embeds"
+      ],
+      "optional": [],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterWeights": {
+      "required": [
+        "weights",
+        "timing",
+        "frames",
+        "start_frame",
+        "end_frame",
+        "add_starting_frames",
+        "add_ending_frames",
+        "method"
+      ],
+      "optional": [
+        "image"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterWeightsFromStrategy": {
+      "required": [
+        "weights_strategy"
+      ],
+      "optional": [
+        "image"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterPromptScheduleFromWeightsStrategy": {
+      "required": [
+        "weights_strategy",
+        "prompt"
+      ],
+      "optional": [],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterCombineWeights": {
+      "required": [
+        "weights_1",
+        "weights_2"
+      ],
+      "optional": [],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterRegionalConditioning": {
+      "required": [
+        "image",
+        "image_weight",
+        "prompt_weight",
+        "weight_type",
+        "start_at",
+        "end_at"
+      ],
+      "optional": [
+        "mask",
+        "positive",
+        "negative"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "IPAdapterCombineParams": {
+      "required": [
+        "params_1",
+        "params_2"
+      ],
+      "optional": [
+        "params_3",
+        "params_4",
+        "params_5"
+      ],
+      "source": "docs/upstream/ipadapter/IPAdapterPlus.py"
+    },
+    "LatentCompositeMasked": {
+      "required": [
+        "destination",
+        "source",
+        "x",
+        "y",
+        "resize_source"
+      ],
+      "optional": [
+        "mask"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "ImageCompositeMasked": {
+      "required": [
+        "destination",
+        "source",
+        "x",
+        "y",
+        "resize_source"
+      ],
+      "optional": [
+        "mask"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "MaskToImage": {
+      "required": [
+        "mask"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "ImageToMask": {
+      "required": [
+        "image",
+        "channel"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "ImageColorToMask": {
+      "required": [
+        "image",
+        "color"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "SolidMask": {
+      "required": [
+        "value",
+        "width",
+        "height"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "InvertMask": {
+      "required": [
+        "mask"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "CropMask": {
+      "required": [
+        "mask",
+        "x",
+        "y",
+        "width",
+        "height"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "MaskComposite": {
+      "required": [
+        "destination",
+        "source",
+        "x",
+        "y",
+        "operation"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "FeatherMask": {
+      "required": [
+        "mask",
+        "left",
+        "top",
+        "right",
+        "bottom"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "GrowMask": {
+      "required": [
+        "mask",
+        "expand",
+        "tapered_corners"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "ThresholdMask": {
+      "required": [
+        "mask",
+        "value"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "MaskPreview": {
+      "required": [
+        "mask"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_mask.py"
+    },
+    "ModelSamplingDiscrete": {
+      "required": [
+        "model",
+        "sampling",
+        "zsnr"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "ModelSamplingStableCascade": {
+      "required": [
+        "model",
+        "shift"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "ModelSamplingSD3": {
+      "required": [
+        "model",
+        "shift"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "ModelSamplingAuraFlow": {
+      "required": [
+        "model",
+        "shift"
+      ],
+      "optional": [
+        "sampling"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "ModelSamplingFlux": {
+      "required": [
+        "model",
+        "max_shift",
+        "base_shift",
+        "width",
+        "height"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "ModelSamplingContinuousEDM": {
+      "required": [
+        "model",
+        "sampling",
+        "sigma_max",
+        "sigma_min"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "ModelSamplingContinuousV": {
+      "required": [
+        "model",
+        "sampling",
+        "sigma_max",
+        "sigma_min"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "RescaleCFG": {
+      "required": [
+        "model",
+        "multiplier"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "ModelNoiseScale": {
+      "required": [
+        "model",
+        "noise_scale"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "ModelComputeDtype": {
+      "required": [
+        "model",
+        "dtype"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "VAEComputeDtype": {
+      "required": [
+        "vae",
+        "dtype"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "ModelAttentionBackend": {
+      "required": [
+        "model",
+        "attention"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py"
+    },
+    "SaveWEBM": {
+      "required": [
+        "images",
+        "filename_prefix",
+        "codec",
+        "fps",
+        "crf"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_video.py"
+    },
+    "SaveVideo": {
+      "required": [
+        "video",
+        "filename_prefix",
+        "format"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_video.py"
+    },
+    "CreateVideo": {
+      "required": [
+        "images",
+        "fps"
+      ],
+      "optional": [
+        "audio",
+        "bit_depth",
+        "color_space",
+        "chroma_subsampling",
+        "codec"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_video.py"
+    },
+    "ConcatenateVideo": {
+      "required": [
+        "videos",
+        "codec",
+        "video"
+      ],
+      "optional": [
+        "complete_audio"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_video.py"
+    },
+    "GetVideoComponents": {
+      "required": [
+        "video"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_video.py"
+    },
+    "LoadVideo": {
+      "required": [
+        "file"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_video.py"
+    },
+    "VideoSlice": {
+      "required": [
+        "video",
+        "start_time",
+        "duration",
+        "strict_duration"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_video.py"
+    },
+    "VideoTrim": {
+      "required": [
+        "video",
+        "trim",
+        "strict_duration"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_video.py"
+    },
+    "VideoCrop": {
+      "required": [
+        "video",
+        "crop"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_video.py"
+    },
+    "WanImageToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size"
+      ],
+      "optional": [
+        "clip_vision_output",
+        "start_image",
+        "ref_pad_image"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanFunControlToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size"
+      ],
+      "optional": [
+        "clip_vision_output",
+        "start_image",
+        "control_video"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "Wan22FunControlToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size"
+      ],
+      "optional": [
+        "ref_image",
+        "control_video"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanFirstLastFrameToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size"
+      ],
+      "optional": [
+        "clip_vision_start_image",
+        "clip_vision_end_image",
+        "start_image",
+        "end_image"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanFunInpaintToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size"
+      ],
+      "optional": [
+        "clip_vision_output",
+        "start_image",
+        "end_image"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanVaceToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size",
+        "strength"
+      ],
+      "optional": [
+        "control_video",
+        "control_masks",
+        "reference_image"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "TrimVideoLatent": {
+      "required": [
+        "samples",
+        "trim_amount"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanCameraImageToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size"
+      ],
+      "optional": [
+        "clip_vision_output",
+        "start_image",
+        "camera_conditions"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanPhantomSubjectToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size"
+      ],
+      "optional": [
+        "images"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanTrackToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "tracks",
+        "width",
+        "height",
+        "length",
+        "batch_size",
+        "temperature",
+        "topk",
+        "start_image"
+      ],
+      "optional": [
+        "clip_vision_output"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanSoundImageToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size"
+      ],
+      "optional": [
+        "audio_encoder_output",
+        "ref_image",
+        "control_video",
+        "ref_motion"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanSoundImageToVideoExtend": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "length",
+        "video_latent"
+      ],
+      "optional": [
+        "audio_encoder_output",
+        "ref_image",
+        "control_video"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanHuMoImageToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size"
+      ],
+      "optional": [
+        "audio_encoder_output",
+        "ref_image"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanAnimateToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size",
+        "continue_motion_max_frames",
+        "video_frame_offset"
+      ],
+      "optional": [
+        "clip_vision_output",
+        "reference_image",
+        "face_video",
+        "pose_video",
+        "background_video",
+        "character_mask",
+        "continue_motion"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanAnimate2ToVideo": {
+      "required": [
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size",
+        "video_frame_offset",
+        "pose_strength",
+        "pose_start_percent",
+        "pose_end_percent",
+        "reference_image_strength"
+      ],
+      "optional": [
+        "reference_image",
+        "pose_video",
+        "clip_vision_output",
+        "positive_pose",
+        "clip_vision_output_pose",
+        "continue_motion"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanAnimate2Cache": {
+      "required": [
+        "model",
+        "device",
+        "dtype"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "Wan22ImageToVideoLatent": {
+      "required": [
+        "vae",
+        "width",
+        "height",
+        "length",
+        "batch_size"
+      ],
+      "optional": [
+        "start_image"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "RelayVSRConditioning": {
+      "required": [
+        "model",
+        "images"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "VSRDecode": {
+      "required": [
+        "vae",
+        "samples",
+        "images",
+        "detail"
+      ],
+      "optional": [],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    },
+    "WanInfiniteTalkToVideo": {
+      "required": [
+        "mode",
+        "model",
+        "model_patch",
+        "positive",
+        "negative",
+        "vae",
+        "width",
+        "height",
+        "length",
+        "audio_encoder_output_1",
+        "motion_frame_count",
+        "audio_scale"
+      ],
+      "optional": [
+        "clip_vision_output",
+        "start_image",
+        "previous_frames",
+        "audio_encoder_output_2",
+        "mask_1",
+        "mask_2"
+      ],
+      "source": "docs/upstream/comfy/comfy_extras/nodes_wan.py"
+    }
+  },
+  "validation": "static source AST; live /object_info validation still required"
+}

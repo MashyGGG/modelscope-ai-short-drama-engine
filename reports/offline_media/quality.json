@@ -1,0 +1,21 @@
+{
+  "codec": "h264",
+  "duration": 45.0,
+  "errors": [],
+  "events": [],
+  "fps": 24.0,
+  "frames": 1080,
+  "height": 384,
+  "human_checks": [
+    "facial stability",
+    "anatomy",
+    "motion continuity",
+    "subtitles readable and within frame",
+    "speech alignment",
+    "no missing shots"
+  ],
+  "owner_id": "EP001",
+  "size_bytes": 1949021,
+  "warnings": [],
+  "width": 216
+}

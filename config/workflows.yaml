@@ -1,0 +1,4 @@
+character: workflows/api/realistic_txt2img.json
+image: workflows/api/sdxl_faceid.json
+video: workflows/api/wan22_i2v.json
+version: 1

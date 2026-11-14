@@ -1,0 +1,13 @@
+{
+  "voice_id": "VOICE_001",
+  "reference_path": "/mnt/workspace/authorized_voice/linchen.wav",
+  "prompt_text": "替换为参考音频中逐字准确的文本。",
+  "prompt_lang": "zh",
+  "authorized": false,
+  "license_note": "替换为授权人、授权范围或合法预置音色的许可证说明。",
+  "emotion_profiles": {
+    "neutral": {"speed_factor": 1.0, "temperature": 1.0},
+    "restrained": {"speed_factor": 0.95, "temperature": 0.8},
+    "confident": {"speed_factor": 1.02, "temperature": 0.9}
+  }
+}

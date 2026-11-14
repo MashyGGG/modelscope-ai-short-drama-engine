@@ -1,0 +1,16 @@
+.venv*/
+.runtime/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+database/*.sqlite*
+database/*.lock
+projects/*/
+assets/**/*.png
+assets/**/*.wav
+assets/**/*.mp3
+*.part
+.env
+logs/*.log
+!logs/offline-validation.log
+reports/offline_media/*.mp4

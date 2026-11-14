@@ -1,0 +1,120 @@
+{
+  "status": "OFFLINE PASSED",
+  "gpu_e2e_status": "NOT_RUN",
+  "elapsed_seconds": 39.56748938560486,
+  "evidence": [
+    {
+      "command": [
+        "D:\\code\\modelscope-ai-short-drama-engine\\.venv-dev\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "D:\\code\\modelscope-ai-short-drama-engine\\.venv-dev\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "D:\\code\\modelscope-ai-short-drama-engine\\.venv-dev\\Scripts\\python.exe",
+        "-m",
+        "compileall",
+        "-q",
+        "core",
+        "director",
+        "production",
+        "scripts",
+        "tests",
+        "engine.py",
+        "generate_episode.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "D:\\code\\modelscope-ai-short-drama-engine\\.venv-dev\\Scripts\\python.exe",
+        "-m",
+        "scripts.validate_upstream"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "D:\\code\\modelscope-ai-short-drama-engine\\.venv-dev\\Scripts\\python.exe",
+        "-m",
+        "scripts.preflight"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "D:\\code\\modelscope-ai-short-drama-engine\\.venv-dev\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q",
+        "--junitxml=reports/pytest.xml"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Git\\bin\\bash.exe",
+        "-n",
+        "oneclick.sh"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Git\\bin\\bash.exe",
+        "-n",
+        "scripts\\setup_comfyui.sh"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Git\\bin\\bash.exe",
+        "-n",
+        "scripts\\setup_common.sh"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Git\\bin\\bash.exe",
+        "-n",
+        "scripts\\setup_tts.sh"
+      ],
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "C:\\Program Files\\Git\\bin\\bash.exe",
+        "-n",
+        "scripts\\start_services.sh"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "shell_syntax_checked": true,
+  "media_kind": "synthetic test patterns and tones; not a generated short drama",
+  "pytest": {
+    "name": "pytest",
+    "errors": "0",
+    "failures": "0",
+    "skipped": "0",
+    "tests": "32",
+    "time": "34.624",
+    "timestamp": "2026-11-14T16:55:14.961334+08:00",
+    "hostname": "jiahui"
+  }
+}

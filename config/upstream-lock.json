@@ -1,0 +1,141 @@
+{
+  "comfy": {
+    "repo": "comfyanonymous/ComfyUI",
+    "commit": "eee59185ff4f43ae2d9ad122b245619d27d9daad",
+    "files": [
+      {
+        "path": "docs/upstream/comfy/server.py",
+        "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/eee59185ff4f43ae2d9ad122b245619d27d9daad/server.py",
+        "sha256": "f0e76068391a1827d361281a599f8043811a6d82fc8ecb3d8d58efb9c348b9d2"
+      },
+      {
+        "path": "docs/upstream/comfy/nodes.py",
+        "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/eee59185ff4f43ae2d9ad122b245619d27d9daad/nodes.py",
+        "sha256": "bc13c5b30448ab9af58491a07c343b21c5300bb952bb22d2552b1c7c8194ac35"
+      },
+      {
+        "path": "docs/upstream/comfy/comfy_extras/nodes_wan.py",
+        "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/eee59185ff4f43ae2d9ad122b245619d27d9daad/comfy_extras/nodes_wan.py",
+        "sha256": "0e9476c087b5d08b5f418a63649a724a2fe12a02e77091e6cb709c8d89808d23"
+      },
+      {
+        "path": "docs/upstream/comfy/comfy_extras/nodes_video.py",
+        "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/eee59185ff4f43ae2d9ad122b245619d27d9daad/comfy_extras/nodes_video.py",
+        "sha256": "e2ab9d82cb803b6fc2ad922bff0926d32888bd7387ec446b3e66c1d146319c83"
+      },
+      {
+        "path": "docs/upstream/comfy/comfy_extras/nodes_model_advanced.py",
+        "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/eee59185ff4f43ae2d9ad122b245619d27d9daad/comfy_extras/nodes_model_advanced.py",
+        "sha256": "f8ec30b55f7a825233508870112ac27351c8a7597d433948a9458e06054b6910"
+      },
+      {
+        "path": "docs/upstream/comfy/LICENSE",
+        "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/eee59185ff4f43ae2d9ad122b245619d27d9daad/LICENSE",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      },
+      {
+        "path": "docs/upstream/comfy/comfy_extras/nodes_mask.py",
+        "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/eee59185ff4f43ae2d9ad122b245619d27d9daad/comfy_extras/nodes_mask.py",
+        "sha256": "08171f430ddd9a327cec92293ac25fd1bc39d5c9079187a51463fb42d2a9d65b"
+      },
+      {
+        "path": "docs/upstream/comfy/comfy_api/latest/_io.py",
+        "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/eee59185ff4f43ae2d9ad122b245619d27d9daad/comfy_api/latest/_io.py",
+        "sha256": "c2a5aded4895a1adf1acb2df6c011fdfb74e15b0d4fd331ec00ea7562d91d91d"
+      },
+      {
+        "path": "docs/upstream/comfy/tests-unit/execution_test/dynamic_inputs_test.py",
+        "url": "https://raw.githubusercontent.com/comfyanonymous/ComfyUI/eee59185ff4f43ae2d9ad122b245619d27d9daad/tests-unit/execution_test/dynamic_inputs_test.py",
+        "sha256": "5f1206ba337a8334e8c38b245635c2fd988c6ed85a8399e9032ffc077d505bff"
+      }
+    ]
+  },
+  "templates": {
+    "repo": "Comfy-Org/workflow_templates",
+    "commit": "79b02f4a79e233c07ec4923e39f40be27448549d",
+    "files": [
+      {
+        "path": "docs/upstream/templates/templates/video_wan2_2_5B_ti2v.json",
+        "url": "https://raw.githubusercontent.com/Comfy-Org/workflow_templates/79b02f4a79e233c07ec4923e39f40be27448549d/templates/video_wan2_2_5B_ti2v.json",
+        "sha256": "8f761d02dfd52fb769249cf240d04bdfb23c8bd722662828572362b98fc77ec6"
+      },
+      {
+        "path": "docs/upstream/templates/LICENSE",
+        "url": "https://raw.githubusercontent.com/Comfy-Org/workflow_templates/79b02f4a79e233c07ec4923e39f40be27448549d/LICENSE",
+        "sha256": "5dccd61c80c847cd6b22fa98124010163ab8646e573557a16a5cae31122f2056"
+      }
+    ]
+  },
+  "ipadapter": {
+    "repo": "cubiq/ComfyUI_IPAdapter_plus",
+    "commit": "a0f451a5113cf9becb0847b92884cb10cbdec0ef",
+    "files": [
+      {
+        "path": "docs/upstream/ipadapter/README.md",
+        "url": "https://raw.githubusercontent.com/cubiq/ComfyUI_IPAdapter_plus/a0f451a5113cf9becb0847b92884cb10cbdec0ef/README.md",
+        "sha256": "07f3a69829464a79656713fd28fcded8c12b6631d8a26414e03dbbd53d49d607"
+      },
+      {
+        "path": "docs/upstream/ipadapter/IPAdapterPlus.py",
+        "url": "https://raw.githubusercontent.com/cubiq/ComfyUI_IPAdapter_plus/a0f451a5113cf9becb0847b92884cb10cbdec0ef/IPAdapterPlus.py",
+        "sha256": "c10f4a8dd8e96b1c1733f513a22d2468c7687c2dd45a0d7ddf5a5b1f7e811c23"
+      },
+      {
+        "path": "docs/upstream/ipadapter/utils.py",
+        "url": "https://raw.githubusercontent.com/cubiq/ComfyUI_IPAdapter_plus/a0f451a5113cf9becb0847b92884cb10cbdec0ef/utils.py",
+        "sha256": "1174018754abea857d76f5e2bc139e6d2b4673c85489a5410a6001153f894a3d"
+      },
+      {
+        "path": "docs/upstream/ipadapter/examples/IPAdapter_FaceIDv2_Kolors.json",
+        "url": "https://raw.githubusercontent.com/cubiq/ComfyUI_IPAdapter_plus/a0f451a5113cf9becb0847b92884cb10cbdec0ef/examples/IPAdapter_FaceIDv2_Kolors.json",
+        "sha256": "3b3d3e2a81ce9ef86e34a027510919aa13b886bf57c489535a69e82170c08d03"
+      },
+      {
+        "path": "docs/upstream/ipadapter/examples/ipadapter_faceid.json",
+        "url": "https://raw.githubusercontent.com/cubiq/ComfyUI_IPAdapter_plus/a0f451a5113cf9becb0847b92884cb10cbdec0ef/examples/ipadapter_faceid.json",
+        "sha256": "6b60d8ba7fb79ac2817b6224f11ec560f4f94f54f6757d5e77c8622cd9b65eac"
+      },
+      {
+        "path": "docs/upstream/ipadapter/examples/ipadapter_faceid_batch.json",
+        "url": "https://raw.githubusercontent.com/cubiq/ComfyUI_IPAdapter_plus/a0f451a5113cf9becb0847b92884cb10cbdec0ef/examples/ipadapter_faceid_batch.json",
+        "sha256": "db2eefae112618dec9db622577ad67f2aa9b8efb659c83b00e37bae0d1e28f29"
+      },
+      {
+        "path": "docs/upstream/ipadapter/examples/ipadapter_ideal_faceid_config.json",
+        "url": "https://raw.githubusercontent.com/cubiq/ComfyUI_IPAdapter_plus/a0f451a5113cf9becb0847b92884cb10cbdec0ef/examples/ipadapter_ideal_faceid_config.json",
+        "sha256": "bf15dabcfe3265609f74c4e557908f520634a32aefb0ae931efc758aa9847a81"
+      },
+      {
+        "path": "docs/upstream/ipadapter/LICENSE",
+        "url": "https://raw.githubusercontent.com/cubiq/ComfyUI_IPAdapter_plus/a0f451a5113cf9becb0847b92884cb10cbdec0ef/LICENSE",
+        "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+      }
+    ]
+  },
+  "tts": {
+    "repo": "RVC-Boss/GPT-SoVITS",
+    "commit": "6d51ffceafbf240145619af4c92408a6e54b7924",
+    "files": [
+      {
+        "path": "docs/upstream/tts/api_v2.py",
+        "url": "https://raw.githubusercontent.com/RVC-Boss/GPT-SoVITS/6d51ffceafbf240145619af4c92408a6e54b7924/api_v2.py",
+        "sha256": "ad9dbea595c43aa1a90fa43ec18efe277b55e5355c5075b076048d50525d72b7"
+      },
+      {
+        "path": "docs/upstream/tts/requirements.txt",
+        "url": "https://raw.githubusercontent.com/RVC-Boss/GPT-SoVITS/6d51ffceafbf240145619af4c92408a6e54b7924/requirements.txt",
+        "sha256": "8cd1ac566254b1132df15f5c91f628f1f374060733ae198fa9d796b1a89af02b"
+      },
+      {
+        "path": "docs/upstream/tts/LICENSE",
+        "url": "https://raw.githubusercontent.com/RVC-Boss/GPT-SoVITS/6d51ffceafbf240145619af4c92408a6e54b7924/LICENSE",
+        "sha256": "8a064eada186601fc602e45feef61c6abb62246d5ae9c3764dd1fc92d946c3c6"
+      },
+      {
+        "path": "docs/upstream/tts/GPT_SoVITS/configs/tts_infer.yaml",
+        "url": "https://raw.githubusercontent.com/RVC-Boss/GPT-SoVITS/6d51ffceafbf240145619af4c92408a6e54b7924/GPT_SoVITS/configs/tts_infer.yaml",
+        "sha256": "740342ddf7c1f6dbc50a3b1c4b19f56becd253b1877dd3d26721a1427c619033"
+      }
+    ]
+  }
+}

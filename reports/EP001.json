@@ -1,0 +1,16 @@
+{
+  "stage_seconds": {},
+  "total_generation_seconds": 0,
+  "failed_shots": [],
+  "regeneration_count": 0,
+  "jobs": [],
+  "episode_id": "EP001",
+  "title": "离婚当天，我继承了千亿集团",
+  "target_duration": 45.0,
+  "gpu_e2e_status": "NOT_RUN",
+  "generated_at": 1794646480.5164473,
+  "gpu_peak_vram_mb": 0,
+  "system_peak_ram_mb": 0,
+  "production_wall_seconds": 0,
+  "acceptance_errors": []
+}

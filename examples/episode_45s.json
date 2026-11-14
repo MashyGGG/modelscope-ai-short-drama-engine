@@ -1,0 +1,415 @@
+{
+  "project_id": "DIVORCE_INHERITANCE",
+  "episode_id": "EP001",
+  "title": "离婚当天，我继承了千亿集团",
+  "outline": "苏雨在律师事务所与林辰签署离婚协议，王总出言羞辱。林辰接到电话，得知继承家族集团。他平静接手，与过去告别。苏雨与王总惊愕。",
+  "genre": "都市反转",
+  "duration": 45.0,
+  "aspect_ratio": "9:16",
+  "style": "photorealistic cinematic film photography, natural skin texture, 35mm lens",
+  "script": "雨天，律师事务所。苏雨推来离婚协议：签了吧。林辰抬眼：你想清楚了？王总走近：她有更好的选择。电话震动，林辰接听：爷爷的集团？苏雨冷笑：你还在演？林辰放下电话：从今天起，我接手。王总失色：你是林家继承人？苏雨怔住。林辰起身：这次，是我不要了。他走向玻璃门。苏雨独留原地。",
+  "characters": [
+    {
+      "character_id": "CHAR_001",
+      "name": "林辰",
+      "gender": "male",
+      "age": 28,
+      "appearance": {
+        "face_shape": "oval face with defined jaw",
+        "eyes": "dark brown eyes",
+        "hair": "short neat black hair",
+        "skin": "natural warm skin",
+        "body": "slim athletic"
+      },
+      "wardrobe": {
+        "default": "charcoal tailored suit, white shirt, no tie"
+      },
+      "expressions": {},
+      "voice_id": "VOICE_001",
+      "fictional": true,
+      "likeness_authorized": false,
+      "identity_locked": false
+    },
+    {
+      "character_id": "CHAR_002",
+      "name": "苏雨",
+      "gender": "female",
+      "age": 26,
+      "appearance": {
+        "face_shape": "soft oval face",
+        "eyes": "almond dark brown eyes",
+        "hair": "shoulder length straight black hair",
+        "skin": "natural fair skin",
+        "body": "slender"
+      },
+      "wardrobe": {
+        "default": "ivory blazer over pale blue blouse"
+      },
+      "expressions": {},
+      "voice_id": "VOICE_002",
+      "fictional": true,
+      "likeness_authorized": false,
+      "identity_locked": false
+    },
+    {
+      "character_id": "CHAR_003",
+      "name": "王总",
+      "gender": "male",
+      "age": 45,
+      "appearance": {
+        "face_shape": "square face",
+        "eyes": "narrow dark brown eyes",
+        "hair": "slicked back black hair with gray temples",
+        "skin": "natural medium skin",
+        "body": "broad shoulders"
+      },
+      "wardrobe": {
+        "default": "navy double breasted suit, burgundy tie"
+      },
+      "expressions": {},
+      "voice_id": "VOICE_003",
+      "fictional": true,
+      "likeness_authorized": false,
+      "identity_locked": false
+    }
+  ],
+  "scenes": [
+    {
+      "scene_id": "SCENE_001",
+      "name": "律师事务所大厅",
+      "description": "modern legal office marble lobby, rain streaked tall windows, walnut desk, no signage",
+      "lighting": "soft cool rainy daylight, subtle warm practical lamps, cinematic contrast",
+      "sound_effects": [
+        "rain on glass",
+        "phone vibration",
+        "quiet footsteps"
+      ]
+    }
+  ],
+  "shots": [
+    {
+      "shot_id": "EP001_SH001",
+      "scene_id": "SCENE_001",
+      "characters": [],
+      "duration": 3.75,
+      "shot_type": "establishing",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Marble lobby of a private legal office, rain on windows, unmarked divorce folder on reception desk",
+      "motion_prompt": "Camera slowly pushes toward the desk",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [],
+      "seed": 177801,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH002",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_002"
+      ],
+      "duration": 3.75,
+      "shot_type": "medium_close_up",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Su Yu calmly slides an unmarked folder toward an offscreen person, eye level",
+      "motion_prompt": "A woman gently slides a folder, holds a cool expression",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [
+        {
+          "dialogue_id": "EP001_D002",
+          "character_id": "CHAR_002",
+          "text": "签了吧。",
+          "emotion": "cold",
+          "mode": "offscreen",
+          "offset": 0.2
+        }
+      ],
+      "seed": 177802,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH003",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_001"
+      ],
+      "duration": 3.75,
+      "shot_type": "over_the_shoulder",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Lin Chen in sharp focus, blurred anonymous shoulder at left edge, shot reverse shot eyeline right",
+      "motion_prompt": "The man lowers his gaze then looks up, subtle breathing",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [
+        {
+          "dialogue_id": "EP001_D003",
+          "character_id": "CHAR_001",
+          "text": "你想清楚了？",
+          "emotion": "restrained",
+          "mode": "offscreen",
+          "offset": 0.2
+        }
+      ],
+      "seed": 177803,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH004",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_003"
+      ],
+      "duration": 3.75,
+      "shot_type": "medium",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Wang stands at the lobby entrance, a restrained condescending smile, eyeline left",
+      "motion_prompt": "The older man adjusts his cuff, slight smile",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [
+        {
+          "dialogue_id": "EP001_D004",
+          "character_id": "CHAR_003",
+          "text": "她有更好的选择。",
+          "emotion": "arrogant",
+          "mode": "offscreen",
+          "offset": 0.2
+        }
+      ],
+      "seed": 177804,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH005",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_001"
+      ],
+      "duration": 3.75,
+      "shot_type": "insert",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Close framing on Lin Chen's hand holding a dark phone, screen turned away, suit cuff matches reference",
+      "motion_prompt": "A phone vibrates once in a man's hand, restrained motion",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [],
+      "seed": 177805,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH006",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_001"
+      ],
+      "duration": 3.75,
+      "shot_type": "close_up",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Lin Chen listens to a phone, soft window light reveals surprise, face stable",
+      "motion_prompt": "The man listens, a small change in his eyes",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [
+        {
+          "dialogue_id": "EP001_D006",
+          "character_id": "CHAR_001",
+          "text": "爷爷的集团？",
+          "emotion": "surprised",
+          "mode": "offscreen",
+          "offset": 0.2
+        }
+      ],
+      "seed": 177806,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH007",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_002"
+      ],
+      "duration": 3.75,
+      "shot_type": "reaction",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Su Yu glances toward the phone, uncertainty behind composure, eyeline left",
+      "motion_prompt": "The woman slightly furrows her brow, no speech",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [
+        {
+          "dialogue_id": "EP001_D007",
+          "character_id": "CHAR_002",
+          "text": "你还在演？",
+          "emotion": "skeptical",
+          "mode": "offscreen",
+          "offset": 0.2
+        }
+      ],
+      "seed": 177807,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH008",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_001"
+      ],
+      "duration": 3.75,
+      "shot_type": "medium_close_up",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Lin Chen sets down the phone and straightens his charcoal suit, suddenly composed",
+      "motion_prompt": "The man lowers his phone and slowly straightens his shoulders",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [
+        {
+          "dialogue_id": "EP001_D008",
+          "character_id": "CHAR_001",
+          "text": "从今天起，我接手。",
+          "emotion": "confident",
+          "mode": "offscreen",
+          "offset": 0.2
+        }
+      ],
+      "seed": 177808,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH009",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_003"
+      ],
+      "duration": 3.75,
+      "shot_type": "over_the_shoulder",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Wang's face in focus, anonymous blurred shoulder at right, composure falters, eyeline right",
+      "motion_prompt": "The older man's smile fades and his eyes widen slightly",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [
+        {
+          "dialogue_id": "EP001_D009",
+          "character_id": "CHAR_003",
+          "text": "你是林家继承人？",
+          "emotion": "shocked",
+          "mode": "offscreen",
+          "offset": 0.2
+        }
+      ],
+      "seed": 177809,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH010",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_002"
+      ],
+      "duration": 3.75,
+      "shot_type": "extreme_close_up",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Su Yu's eyes register disbelief and regret, realistic skin texture, cinematic shallow focus",
+      "motion_prompt": "The woman's eyes widen subtly, she holds still",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [],
+      "seed": 177810,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH011",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_001"
+      ],
+      "duration": 3.75,
+      "shot_type": "wide",
+      "camera": "slow_dolly_in",
+      "image_prompt": "Lin Chen alone walks toward the bright glass lobby doors, same charcoal suit, clean silhouette",
+      "motion_prompt": "A man takes two calm steps toward the glass door, camera tracks slowly",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [
+        {
+          "dialogue_id": "EP001_D011",
+          "character_id": "CHAR_001",
+          "text": "这次，是我不要了。",
+          "emotion": "resolved",
+          "mode": "offscreen",
+          "offset": 0.2
+        }
+      ],
+      "seed": 177811,
+      "status": "pending"
+    },
+    {
+      "shot_id": "EP001_SH012",
+      "scene_id": "SCENE_001",
+      "characters": [
+        "CHAR_002"
+      ],
+      "duration": 3.75,
+      "shot_type": "reaction",
+      "camera": "slow_dolly_out",
+      "image_prompt": "Su Yu alone beside the unmarked folder, empty space at left, cool rain light",
+      "motion_prompt": "Camera gently pulls back from the silent woman",
+      "negative_prompt": "distorted face, extra fingers, text, subtitles, watermark, extra people",
+      "reference_images": [],
+      "wardrobe": {},
+      "pose_reference": null,
+      "identity_masks": {},
+      "expressions": {},
+      "dialogues": [],
+      "seed": 177812,
+      "status": "pending"
+    }
+  ],
+  "music_path": null,
+  "effect_tracks": []
+}

@@ -1,0 +1,7 @@
+gpu_name: NVIDIA A10
+gpu_serial: true
+minimum_free_vram_mb: 14000
+minimum_available_ram_mb: 12000
+unload_timeout_seconds: 90
+monitor_interval_seconds: 1
+comfy_residual_vram_limit_mb: 3000

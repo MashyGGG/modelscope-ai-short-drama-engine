@@ -1,0 +1,13 @@
+# Exact content hashes, file names and revisions are in models-lock.json.
+manifest: config/models-lock.json
+faceid_pair:
+  weights: ip-adapter-faceid-plusv2_sdxl.bin
+  lora: ip-adapter-faceid-plusv2_sdxl_lora.safetensors
+  encoder: CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors
+  insightface: buffalo_l
+  provider: CPU
+# The stock FaceID model card limits use to research/non-commercial purposes.
+usage: research_noncommercial
+insightface_url: https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_l.zip
+modelscope_repos:
+  stabilityai/stable-diffusion-xl-base-1.0: AI-ModelScope/stable-diffusion-xl-base-1.0

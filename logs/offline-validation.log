@@ -1,0 +1,53 @@
+OFFLINE VALIDATION — MOCK COMFYUI + SYNTHETIC MEDIA; NO GPU INFERENCE
+COMMAND: D:\code\modelscope-ai-short-drama-engine\.venv-dev\Scripts\python.exe -m pip check
+No broken requirements found.
+EXIT: 0
+COMMAND: D:\code\modelscope-ai-short-drama-engine\.venv-dev\Scripts\python.exe -m ruff check .
+All checks passed!
+EXIT: 0
+COMMAND: D:\code\modelscope-ai-short-drama-engine\.venv-dev\Scripts\python.exe -m compileall -q core director production scripts tests engine.py generate_episode.py
+EXIT: 0
+COMMAND: D:\code\modelscope-ai-short-drama-engine\.venv-dev\Scripts\python.exe -m scripts.validate_upstream
+Upstream source contracts passed: workflows\api\realistic_txt2img.json, workflows\api\sdxl_faceid.json, workflows\api\wan22_i2v.json
+EXIT: 0
+COMMAND: D:\code\modelscope-ai-short-drama-engine\.venv-dev\Scripts\python.exe -m scripts.preflight
+{
+  "mode": "offline_preflight",
+  "gpu_e2e_status": "NOT_RUN",
+  "ffmpeg": "ffmpeg version 9.0.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "hardware": {
+    "ram_used_mb": 10158.28515625,
+    "ram_available_mb": 5949.95703125,
+    "process_rss_mb": 49.0546875,
+    "gpus": []
+  },
+  "dependencies": {
+    "requests": "2.32.5",
+    "PyYAML": "6.0.2",
+    "Pillow": "11.3.0",
+    "pydantic": "2.11.7",
+    "portalocker": "3.2.0",
+    "psutil": "7.0.0"
+  },
+  "errors": [],
+  "warnings": [
+    "No NVIDIA GPU detected; real inference and GPU E2E acceptance have not run"
+  ],
+  "passed": true
+}
+EXIT: 0
+COMMAND: D:\code\modelscope-ai-short-drama-engine\.venv-dev\Scripts\python.exe -m pytest -q --junitxml=reports/pytest.xml
+................................                                         [100%]
+- generated xml file: D:\code\modelscope-ai-short-drama-engine\reports\pytest.xml -
+32 passed in 34.65s
+EXIT: 0
+COMMAND: C:\Program Files\Git\bin\bash.exe -n oneclick.sh
+EXIT: 0
+COMMAND: C:\Program Files\Git\bin\bash.exe -n scripts\setup_comfyui.sh
+EXIT: 0
+COMMAND: C:\Program Files\Git\bin\bash.exe -n scripts\setup_common.sh
+EXIT: 0
+COMMAND: C:\Program Files\Git\bin\bash.exe -n scripts\setup_tts.sh
+EXIT: 0
+COMMAND: C:\Program Files\Git\bin\bash.exe -n scripts\start_services.sh
+EXIT: 0
